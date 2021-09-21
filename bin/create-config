@@ -49,6 +49,9 @@ function createConfig() {
   }
 
   config = {
+    admin: {
+      url: process.env.APP_ADMIN_URL || process.env.APP_PUBLIC_URL,
+    },
     url: process.env.APP_PUBLIC_URL,
     logging: {
       level: "info",

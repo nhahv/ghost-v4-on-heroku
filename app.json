@@ -7,9 +7,17 @@
     "postdeploy": "bin/init-deployment"
   },
   "success_url": "/ghost",
-  "addons": ["jawsdb", "mailgun", "cloudinary"],
+  "addons": [
+    "jawsdb",
+    "mailgun",
+    "cloudinary"
+  ],
   "env": {
     "APP_PUBLIC_URL": {
+      "description": "Complete URL of your app including https (You can change it later in Config Vars)",
+      "value": "https://YOURAPPNAME.herokuapp.com"
+    },
+    "APP_ADMIN_URL": {
       "description": "Complete URL of your app including https (You can change it later in Config Vars)",
       "value": "https://YOURAPPNAME.herokuapp.com"
     },
